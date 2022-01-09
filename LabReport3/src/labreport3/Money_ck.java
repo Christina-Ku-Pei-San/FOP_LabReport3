@@ -2,7 +2,7 @@ package labreport3;
 
 import java.util.Random;
 
-public class Money {
+public class Money_ck {
     private int amount = 0;
     private int[] amounts = null;
     private static int totalAmount;
@@ -12,17 +12,17 @@ public class Money {
     private int[] amount_cents = new int[cents.length];
     Random r = new Random();
 
-    public Money() {
+    public Money_ck() {
         amount = r.nextInt(99001)+1000;
         totalAmount += amount;
     }
 
-    public Money(int amount) {
+    public Money_ck(int amount) {
         this.amount = amount;
         totalAmount += amount;
     }
 
-    public Money(int[] amounts) {
+    public Money_ck(int[] amounts) {
         this.amounts = amounts;
         for (int i = 0; i < amounts.length; i++) {
             totalAmount += amounts[i];
@@ -49,7 +49,7 @@ public class Money {
         this.amounts = amounts;
     }
     
-    public static void add(Money object) {
+    public static void add(Money_ck object) {
         System.out.println("Total amounts of all Money objects = " + object.getTotalAmount());
     }
     
