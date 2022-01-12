@@ -5,12 +5,12 @@ public class Song_ck {
     private String title, filename, singer, duration, year;
     private static int cnt = 0, cur = 0;
 
-    public Song_ck(String title, String filename, String singer, String duration, String year) {
+    public Song_ck(String title, String filename, String singer, double duration, int year) {
         info[cnt][0] = title;
         info[cnt][1] = filename;
         info[cnt][2] = singer;
-        info[cnt][3] = duration;
-        info[cnt][4] = year;
+        info[cnt][3] = String.format("%.2f", duration);
+        info[cnt][4] = String.valueOf(year);
         cnt++;
     }
     
