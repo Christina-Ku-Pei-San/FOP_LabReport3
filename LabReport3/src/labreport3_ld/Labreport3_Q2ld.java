@@ -40,7 +40,7 @@ public class Labreport3_Q2ld {
         else System.out.println("NOT FOUND!");
 
         System.out.print("\nSearch with singer: ");
-        if(s.singerSearch(sc.nextLine())== singer.length)
+        if(s.singerSearch(sc.nextLine())== singer.length-1)
             System.out.println("NOT FOUND!");
     }
 }
