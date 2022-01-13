@@ -1,8 +1,8 @@
-package labreport3;
+package labreport3_ck;
 
 import java.util.Random;
 
-public class Money_ck {
+public class Money {
     private int amount;
     private int[] amounts;
     private static int totalAmount;
@@ -10,17 +10,17 @@ public class Money_ck {
     private int[] amount_notesCents = new int[notesCents.length];
     Random r = new Random();
 
-    public Money_ck() {
+    public Money() {
         amount = r.nextInt(99001)+1000;
         totalAmount += amount;
     }
 
-    public Money_ck(int amount) {
+    public Money(int amount) {
         this.amount = amount;
         totalAmount += amount;
     }
 
-    public Money_ck(int[] amounts) {
+    public Money(int[] amounts) {
         this.amounts = amounts;
         for (int i = 0; i < amounts.length; i++) {
             totalAmount += amounts[i];
@@ -47,7 +47,7 @@ public class Money_ck {
         this.amounts = amounts;
     }
     
-    public static void add(Money_ck object) {
+    public static void add(Money object) {
         System.out.printf("Total amounts of all Money objects = %dcents (RM%.2f)\n", object.getTotalAmount(), object.getTotalAmount()/100.0);
     }
     

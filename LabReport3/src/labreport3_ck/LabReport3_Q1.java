@@ -1,23 +1,23 @@
-package labreport3;
+package labreport3_ck;
 
-public class LabReport3_Q1ck {
+public class LabReport3_Q1 {
 
     public static void main(String[] args) {
-        Money_ck m1 = new Money_ck(81350);
+        Money m1 = new Money(81350);
         System.out.println(m1.toString());
         
-        Money_ck m2 = new Money_ck(18212);
+        Money m2 = new Money(18212);
         System.out.println(m2.toString());
         
-        Money_ck m3 = new Money_ck();
+        Money m3 = new Money();
         System.out.println(m3.toString());
         
         int[] amounts = {32534,633264};
-        Money_ck m4 = new Money_ck(amounts);
+        Money m4 = new Money(amounts);
         System.out.println(m4.toString());
         
         // not sure how is the add method work
-        Money_ck.add(m3);
+        Money.add(m3);
     }
     
 }

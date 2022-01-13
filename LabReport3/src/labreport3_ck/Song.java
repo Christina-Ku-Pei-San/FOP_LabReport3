@@ -1,11 +1,11 @@
-package labreport3;
+package labreport3_ck;
 
-public class Song_ck {
+public class Song {
     private static String[][] info = new String[20][5];
     private String title, filename, singer, duration, year;
     private static int cnt = 0, cur = 0;
 
-    public Song_ck(String title, String filename, String singer, double duration, int year) {
+    public Song(String title, String filename, String singer, double duration, int year) {
         info[cnt][0] = title;
         info[cnt][1] = filename;
         info[cnt][2] = singer;
